@@ -108,12 +108,11 @@ a{
     display: flex;
     justify-content: space-evenly;
     background-color: var(--terciario);
-    padding: 2rem;
 }
 .header__titulo{
     display: flex;
     justify-content: right;
-padding: 10px;
+    padding-top: 4rem;
 font-size: 5rem;
 
 }
@@ -144,13 +143,11 @@ font-size: 5rem;
 }
 
 .header__icon{
-    border-radius: 50%;
-    align-items: center;
-    padding: 20;
-    color: black;
-    object-fit:cover ;
-
+ width: 34%;
+display: block;
+margin: auto;
 }
+
     /*Fin Inicio header  */
 
     /* primer video incio */
@@ -176,42 +173,17 @@ font-size: 5rem;
     /* fin primer video */
 
     /* inicio ofertas */
-    .parent {
-        background-image : url(media/img/atlas.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: var(--terciario);
+   .conteiner-ofertas{
+       margin-top: -3rem;
+   }
+   .h5-ofertas{
+       font-size: 2rem;
 
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(5, 4fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        }
-        
-        .div1 { grid-area: 1 / 2 / 2 / 3; }
-        .div2 { grid-area: 2 / 4 / 3 / 5; }
-        .div3 { grid-area: 3 / 2 / 4 / 3; }
-        .div4 { grid-area: 4 / 4 / 5 / 5; }
-        
-
-.ofertas{
-   margin-bottom: -33rem;
-
-}
-.p-fade{
-    font-family: var(--fuenteParrafos);
-    font-size: 2rem;
-    padding-top: 1rem; 
-    color: var(--primario); 
-    font-weight: bold;
-    
-}
-.inicio-sesion{
-    text-align: center;
-    color: var(--primario);
-    font-size: 4rem;
-}
+   }
+   .p-ofertas{
+       font-size: var(--fuenteParrafos);
+       color: var(--primario);
+   }
     /* fin ofertas */
 
 /* restaurante inicio */
@@ -416,35 +388,21 @@ font-size: 5rem;
 
 
     /* Footer inicio */
-    .footer{
-        background-color: var(--terciario);
-        margin-top: 4rem;
-    }
-    .footer__nav{
-      display: flex;
-      justify-content: right;
-
-    }
-    .footer__ul{
-        list-style: none;
-        font-size: 2rem;
-        padding: 1rem;
-        text-decoration: none;
-    }
-    .footer__social{
+   .footer{
+       background-color:var(--terciario);
+       padding-bottom: 10rem;
+   }
+   .conteiner-links{
        display: flex;
-       justify-content: left;
-       list-style: none;
-
-    }
-    .footer__social--ul{
-       width: 20%;
+       flex-direction: row;
+       justify-content: flex-end;
        
-    }
-    .derechos-Enzo{
-        display: flex;
-        justify-content: center;
-        font-size: 3rem;
-    }
+   }
+   .img-footer{
+    width: 100%;
+    
+
+   }
+  
 
     /* Footer fin */

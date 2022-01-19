@@ -1,0 +1,145 @@
+:root{
+    --fuenteheading:'Roboto Mono', monospace;
+    --fuenteParrafos:'Roboto Mono', monospace;
+
+    --primario: #000000;
+    --secundario: #ffffff;
+    --terciario: #03a165;
+}
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400&display=swap');
+
+/* fin Fuentes */
+
+/* Globales */
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;  /* 1rem=10px*/
+    font-family: var(--fuenteheading);
+    padding: 0;
+    margin: 0;
+}
+*,*:before,*::after{
+    box-sizing:inherit ;
+}
+video{
+    width: 100%;
+}
+ul,ol{
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    
+}
+.header{
+    height: 20rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--terciario);
+    padding: 2rem;
+}
+.header__titulo{
+    display: flex;
+    justify-content: right;
+font-size: 5rem;
+
+}
+.header__boton{
+   background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden; 
+
+
+}
+.header__boton:hover{
+    transform: translate(20px);
+    transform-origin:center center ;
+    transition: all .3s ease-in-out;
+
+}
+.header__boton--link{
+    display: flex;
+    text-decoration: none;
+    font-family: var(--fuenteParrafos);
+    font-size: 2.2rem;
+    color: var(--primario);
+    
+    
+
+}
+
+.header__icon{
+    border-radius: 50%;
+    align-items: center;
+    padding: 20;
+    color: black;
+    object-fit:cover ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Footer inicio */
+    .footer{
+        background-color: var(--terciario);
+        margin-top: 4rem;
+    }
+    .footer__nav{
+      display: flex;
+      justify-content: right;
+
+    }
+    .footer__ul{
+        list-style: none;
+        font-size: 2rem;
+        padding: 1rem;
+        text-decoration: none;
+    }
+    .footer__social{
+       display: flex;
+       justify-content: left;
+       list-style: none;
+
+    }
+    .footer__social--ul{
+       width: 20%;
+       
+    }
+    .derechos-Enzo{
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+    }
+
+    /* Footer fin */
