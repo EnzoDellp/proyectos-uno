@@ -389,6 +389,20 @@ margin: auto;
 
     /* Footer inicio */
    .footer{
-       background-color: var(--terciario);
+       background-color:var(--terciario);
+       padding-bottom: 10rem;
    }
+   .conteiner-links{
+       display: flex;
+       flex-direction: row;
+       justify-content: flex-end;
+       
+   }
+   .img-footer{
+    width: 100%;
+    
+
+   }
+  
+
     /* Footer fin */
