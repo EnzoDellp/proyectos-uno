@@ -405,6 +405,7 @@ margin: auto;
        display:flex;
        flex-direction: row;
        flex-wrap: nowrap;
+       gap: 2rem;
     align-items: flex-start;
     align-items: flex-end;
     width: 30%;
@@ -433,7 +434,7 @@ width: 30%;
 }
 @media (min-width:300px){
    .facebook{
-    width: 40%;
+    width: 47%;
    }
    .twitter,.youtube,.instagram,.github{
     width: 50%;
