@@ -81,6 +81,24 @@ font-size: 5rem;
     object-fit:cover ;
 }
 
+/* formulario */
+
+.contendor-formluario{
+    display: flex;
+    align-items: center;
+    margin: 165px 0 18rem 0; 
+    justify-content: center;
+    background: rgb(170,172,169);
+background: linear-gradient(90deg, rgba(170,172,169,1) 0%, rgba(222,230,220,1) 41%, rgba(141,142,141,1) 100%);
+   
+}
+h2{
+    font-size: 2rem;
+}
+body{
+    background: rgb(170,172,169);
+    background: linear-gradient(90deg, rgba(170,172,169,1) 0%, rgba(222,230,220,1) 41%, rgba(141,142,141,1) 100%);  
+}
 
 
 
@@ -104,42 +122,30 @@ font-size: 5rem;
 
 
 
-
-
-
+/* formulario Fin */
 
 
 
     /* Footer inicio */
     .footer{
         background-color: var(--terciario);
-        margin-top: 4rem;
+        padding: 3rem 0;
+     
     }
-    .footer__nav{
-      display: flex;
-      justify-content: right;
-
-    }
-    .footer__ul{
-        list-style: none;
-        font-size: 2rem;
-        padding: 1rem;
-        text-decoration: none;
-    }
-    .footer__social{
-       display: flex;
-       justify-content: left;
-       list-style: none;
-
-    }
-    .footer__social--ul{
-       width: 20%;
-       
-    }
-    .derechos-Enzo{
+    .navegacion{
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        font-size: 3rem;
+        font-family: var(--fuenteParrafos);
+        font-size: 2rem;
+        color: var(--primario);
     }
+    .social-media{
+        width: 10%;
+         display: flex;
+         flex-direction: row;
+         align-items: flex-end;
+    }
+    
 
     /* Footer fin */
