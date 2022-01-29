@@ -1,0 +1,24 @@
+.header{
+    background-color: $azul;
+    h1{
+        color: $ceniza;
+    }
+   
+}
+.navegacion-principal{
+   background-color: coral;
+   @include telefono{
+       background-color: red;
+   }
+@include tablet{
+    background-color: royalblue;
+}
+    a{
+        color: $ceniza;
+        font-size: 2.4rem;
+      
+        &:hover{
+            color: $blanco;
+        }
+    }
+}
