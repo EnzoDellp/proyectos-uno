@@ -54,27 +54,107 @@ h3 {
 }
 .header h1 {
   color: #CDCDCD;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .header h1 {
+    margin: 0;
+  }
+}
+.header .contenido-header {
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  .header .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .navegacion-principal {
-  background-color: coral;
-}
-@media (min-width: 480px) {
-  .navegacion-principal {
-    background-color: red;
-  }
+  padding: 2rem;
 }
 @media (min-width: 768px) {
   .navegacion-principal {
-    background-color: royalblue;
+    display: flex;
+    gap: 2rem;
   }
 }
 .navegacion-principal a {
+  display: block;
+  text-align: center;
   color: #CDCDCD;
   font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .navegacion-principal a {
+    margin: 0;
+  }
 }
 .navegacion-principal a:hover {
   color: #ffffff;
+}
+
+.img-uno {
+  position: relative;
+  max-height: 100rem;
+  min-height: 50rem;
+  overflow: hidden;
+}
+.img-uno .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.img-uno img {
+  width: auto;
+  display: block;
+}
+@media (min-width: 992px) {
+  .img-uno img {
+    width: 100%;
+  }
+}
+
+.contenido-img {
+  z-index: 10;
+}
+.contenido-img h2 {
+  color: #000000;
+  font: size 7rem;
+  margin: 0;
+}
+.contenido-img p {
+  background: white;
+  background: linear-gradient(111deg, rgba(255, 255, 255, 0) 1%, #9fa6a2 75%);
+  display: inline-block;
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+.card-titulo h2 {
+  text-align: center;
+  font-family: "Lorea";
+  color: #000000;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.card-titulo p {
+  text-align: center;
+  font-family: "PT Serif";
+  color: #252440;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.conteiner.card {
+  background-color: #CDCDCD;
 }
 
 /*# sourceMappingURL=app.css.map */
