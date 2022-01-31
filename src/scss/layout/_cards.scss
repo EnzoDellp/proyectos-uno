@@ -1,10 +1,15 @@
 .card-titulo{
+
     h2{
         text-align: center;
         font-family: $fuente_principal;
         color: $negro;
         margin: 0;
         margin-bottom: 1rem;
+        padding-top: -3rem;
+        @include telefono{
+           padding: 0;
+        }
     }
     p{
         text-align: center;
@@ -15,6 +20,20 @@
 
     }
 }
-.conteiner.card{
-background-color: $ceniza;
+.conteiner-card{
+display: flex;
+flex-direction: column;
+align-items: center;  
+gap: 2rem;
+@include tablet{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} 
+   
+
+
+
+   
 }
