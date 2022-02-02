@@ -6,7 +6,6 @@
         color: $negro;
         margin: 0;
         margin-bottom: 1rem;
-        padding-top: -3rem;
         @include telefono{
            padding: 0;
         }
@@ -16,7 +15,7 @@
         font-family: $fuente_parrafos;
         color: $azul;
         margin: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
 
     }
 }
@@ -25,6 +24,8 @@ display: flex;
 flex-direction: column;
 align-items: center;  
 gap: 2rem;
+margin: 0;
+
 @include tablet{
     display: flex;
     flex-direction: row;
@@ -32,8 +33,29 @@ gap: 2rem;
     align-items: center;
 } 
    
-
-
-
-   
 }
+.card-title{
+    font-size: $fuente_principal;
+    font-size: 2.3rem;
+    text-align: center;
+    background-color: $azul;
+    color: $blanco;
+    .card-text{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+}
+
+
+.boton-uno,.boton-dos,.boton-tres{
+    font-size: 2rem;
+    color: $blanco;
+    font-family: $fuente_principal;
+    color:$blanco;
+    background-color: $azul;
+    border: none;
+    display: inline;
+    text-align: center;
+   }
+

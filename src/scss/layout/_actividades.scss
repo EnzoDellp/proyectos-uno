@@ -1,0 +1,26 @@
+.contendor-actividades{
+    text-align: center;
+    background-color: $azul;
+    color: $ceniza;
+    h2{
+        margin-top: 3rem;
+        padding-bottom: 1rem;
+    }
+    p{
+        text-align: center;
+        color: $ceniza;
+    }
+}
+.contenedor-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border: $ceniza solid 4rem;
+    .Contenedor-img{
+        width: 25%;
+    }
+    .Contenedor-txt{
+        text-align: center;
+    }
+}
