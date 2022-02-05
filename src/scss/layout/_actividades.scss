@@ -1,26 +1,161 @@
 .contendor-actividades{
     text-align: center;
-    background-color: $azul;
     color: $ceniza;
     h2{
-        margin-top: 3rem;
-        padding-bottom: 1rem;
+       font-size: 2rem;
+       @include telefono{
+        font-size: 2.5rem;
+       }
+        @include tablet{
+            margin-top: 3rem;
+            padding-bottom: 1rem;
+            color: $ceniza;
+            font-size: 4rem;
+        }
+        @include desktop{
+            font-size: 4.3rem;
+
+        }
+        @include desktopXL{
+            font-size: 5rem;
+        }
     }
     p{
         text-align: center;
         color: $ceniza;
+        font-size: 1rem;
+
+        @include telefono{
+            font-size: 1.5rem;
+           }
+            @include tablet{
+                color: $ceniza;
+                font-size: 2rem;
+            }
+            @include desktop{
+                font-size: 3.2rem;
+                
+    
+            }
+            @include desktopXL{
+                font-size: 3.5rem;
+            }
     }
 }
 .contenedor-ul{
+    background-color: $azul;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    border: $ceniza solid 4rem;
+    border: $ceniza solid 0.2rem;
+    font-size: 1rem;
     .Contenedor-img{
-        width: 25%;
+        width: 50%;
     }
-    .Contenedor-txt{
+    .contendor-text{
         text-align: center;
+        h3{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+       
+       
+    
     }
+  
+    @include telefono{
+        background-color: $azul;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        border: $ceniza solid 1rem;
+        .Contenedor-img{
+            width: 50%;
+        }
+        .Contenedor-txt{
+            text-align: center;
+        };
+    }
+    @include tablet{
+        background-color: $azul;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        border: $ceniza solid 1rem;
+        .Contenedor-img{
+            width: 50%;
+        }
+        .contendor-text{
+            text-align: center;
+            font-size: 3rem;
+            h3{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+
+        }
+    }
+    @include desktop{
+        background-color: $azul;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        border: $ceniza solid 1rem;
+        .Contenedor-img{
+            width: 30%;
+        }
+        .contendor-text{
+            text-align: center;
+            h3{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 2.5rem;
+            }
+
+        }
+    }
+    @include desktopXL{
+        background-color: $azul;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        border: $ceniza solid 1rem;
+        .Contenedor-img{
+            width: 30%;
+        }
+        .contendor-text{
+            text-align: center;
+            h3{
+                font-size: 3.5rem;
+            }
+            p{
+                font-size: 3rem;
+            }
+
+        }
+    }
+    
+
+}
+
+.bkg-actividades{
+    background-color: $azul;
 }

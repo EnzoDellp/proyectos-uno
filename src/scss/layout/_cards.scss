@@ -1,13 +1,18 @@
 .card-titulo{
 
     h2{
+        margin:0;
         text-align: center;
         font-family: $fuente_principal;
         color: $negro;
         margin: 0;
+        font-size: 2rem;
+
         margin-bottom: 1rem;
         @include telefono{
            padding: 0;
+           font-size: 3rem;
+
         }
     }
     p{
@@ -15,7 +20,7 @@
         font-family: $fuente_parrafos;
         color: $azul;
         margin: 0;
-        margin-bottom: 3rem;
+        margin:0;
 
     }
 }
@@ -23,10 +28,13 @@
 display: flex;
 flex-direction: column;
 align-items: center;  
+justify-content: center;
 gap: 2rem;
 margin: 0;
 
+
 @include tablet{
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -36,20 +44,34 @@ margin: 0;
 }
 .card-title{
     font-size: $fuente_principal;
-    font-size: 2.3rem;
+    font-size: 1.4rem;
     text-align: center;
     background-color: $azul;
     color: $blanco;
-    .card-text{
-        font-size: 1.5rem;
-        text-align: center;
+    @include telefono{
+        font-size: 2rem;
+       }
+        @include tablet{
+            color: $ceniza;
+            font-size: 2rem;
+        }
+        @include desktop{
+            font-size: 2.3rem;
+
+        }
+        @include desktopXL{
+            font-size: 3rem;
+        }
+   
     }
     
+
+.carta{
+    width: 40%;
 }
 
-
 .boton-uno,.boton-dos,.boton-tres{
-    font-size: 2rem;
+    font-size: 1rem;
     color: $blanco;
     font-family: $fuente_principal;
     color:$blanco;
@@ -57,5 +79,16 @@ margin: 0;
     border: none;
     display: inline;
     text-align: center;
+    @include telefono{
+        font-size: 2rem;
+    }
    }
 
+.card-text{
+    font-size: 1rem;
+    font-family: $fuente_parrafos;
+    @include telefono{
+        font-size: 2rem;
+    }
+    
+}

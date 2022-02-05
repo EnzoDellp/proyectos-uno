@@ -34,7 +34,7 @@ a {
 }
 
 h1, h2, h3 {
-  margin: 0 0 0;
+  margin: 0 0;
 }
 
 h1 {
@@ -149,15 +149,18 @@ h3 {
 }
 
 .card-titulo h2 {
+  margin: 0;
   text-align: center;
   font-family: "Lorea";
   color: #000000;
   margin: 0;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 @media (min-width: 480px) {
   .card-titulo h2 {
     padding: 0;
+    font-size: 3rem;
   }
 }
 .card-titulo p {
@@ -165,13 +168,14 @@ h3 {
   font-family: "PT Serif";
   color: #252440;
   margin: 0;
-  margin-bottom: 3rem;
+  margin: 0;
 }
 
 .conteiner-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
   margin: 0;
 }
@@ -186,18 +190,39 @@ h3 {
 
 .card-title {
   font-size: "Lorea";
-  font-size: 2.3rem;
+  font-size: 1.4rem;
   text-align: center;
   background-color: #252440;
   color: #ffffff;
 }
-.card-title .card-text {
-  font-size: 1.5rem;
-  text-align: center;
+@media (min-width: 480px) {
+  .card-title {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .card-title {
+    color: #CDCDCD;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .card-title {
+    font-size: 2.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .card-title {
+    font-size: 3rem;
+  }
+}
+
+.carta {
+  width: 40%;
 }
 
 .boton-uno, .boton-dos, .boton-tres {
-  font-size: 2rem;
+  font-size: 1rem;
   color: #ffffff;
   font-family: "Lorea";
   color: #ffffff;
@@ -206,33 +231,206 @@ h3 {
   display: inline;
   text-align: center;
 }
+@media (min-width: 480px) {
+  .boton-uno, .boton-dos, .boton-tres {
+    font-size: 2rem;
+  }
+}
+
+.card-text {
+  font-size: 1rem;
+  font-family: "PT Serif";
+}
+@media (min-width: 480px) {
+  .card-text {
+    font-size: 2rem;
+  }
+}
 
 .contendor-actividades {
   text-align: center;
-  background-color: #252440;
   color: #CDCDCD;
 }
 .contendor-actividades h2 {
-  margin-top: 3rem;
-  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+@media (min-width: 480px) {
+  .contendor-actividades h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .contendor-actividades h2 {
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+    color: #CDCDCD;
+    font-size: 4rem;
+  }
+}
+@media (min-width: 992px) {
+  .contendor-actividades h2 {
+    font-size: 4.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .contendor-actividades h2 {
+    font-size: 5rem;
+  }
 }
 .contendor-actividades p {
   text-align: center;
   color: #CDCDCD;
+  font-size: 1rem;
+}
+@media (min-width: 480px) {
+  .contendor-actividades p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .contendor-actividades p {
+    color: #CDCDCD;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .contendor-actividades p {
+    font-size: 3.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .contendor-actividades p {
+    font-size: 3.5rem;
+  }
 }
 
 .contenedor-ul {
+  background-color: #252440;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  border: #CDCDCD solid 4rem;
+  border: #CDCDCD solid 0.2rem;
+  font-size: 1rem;
 }
 .contenedor-ul .Contenedor-img {
-  width: 25%;
+  width: 50%;
 }
-.contenedor-ul .Contenedor-txt {
+.contenedor-ul .contendor-text {
   text-align: center;
+}
+.contenedor-ul .contendor-text h3 {
+  font-size: 1.5rem;
+}
+.contenedor-ul .contendor-text p {
+  font-size: 1rem;
+}
+@media (min-width: 480px) {
+  .contenedor-ul {
+    background-color: #252440;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border: #CDCDCD solid 1rem;
+  }
+  .contenedor-ul .Contenedor-img {
+    width: 50%;
+  }
+  .contenedor-ul .Contenedor-txt {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .contenedor-ul {
+    background-color: #252440;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border: #CDCDCD solid 1rem;
+  }
+  .contenedor-ul .Contenedor-img {
+    width: 50%;
+  }
+  .contenedor-ul .contendor-text {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .contenedor-ul .contendor-text h3 {
+    font-size: 2rem;
+  }
+  .contenedor-ul .contendor-text p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .contenedor-ul {
+    background-color: #252440;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border: #CDCDCD solid 1rem;
+  }
+  .contenedor-ul .Contenedor-img {
+    width: 30%;
+  }
+  .contenedor-ul .contendor-text {
+    text-align: center;
+  }
+  .contenedor-ul .contendor-text h3 {
+    font-size: 3rem;
+  }
+  .contenedor-ul .contendor-text p {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .contenedor-ul {
+    background-color: #252440;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border: #CDCDCD solid 1rem;
+  }
+  .contenedor-ul .Contenedor-img {
+    width: 30%;
+  }
+  .contenedor-ul .contendor-text {
+    text-align: center;
+  }
+  .contenedor-ul .contendor-text h3 {
+    font-size: 3.5rem;
+  }
+  .contenedor-ul .contendor-text p {
+    font-size: 3rem;
+  }
+}
+
+.bkg-actividades {
+  background-color: #252440;
+}
+
+.casino-main {
+  background-color: black;
+  position: relative;
+}
+
+.casino-texto {
+  color: red;
+}
+.casino-texto p {
+  color: green;
 }
 
 /*# sourceMappingURL=app.css.map */
