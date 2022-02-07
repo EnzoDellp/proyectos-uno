@@ -1,11 +1,34 @@
-.casino-main{
-    background-color:black;
-    position:relative ;
-   
-}
-.casino-texto{
-    color: red;
-    p{
-        color: green;
+.contenedor-restaurante{
+    position: relative;
+    width: 85%;
+    display: block;
+    background-color: $ceniza;
+    margin: 0 auto;
+
+
+    img{
+        object-fit: cover;
+        margin: 1rem 0;
+        width: 85%;
+        
     }
 }
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    background-color: $blanco-bg;
+    text-align: center;
+    color: $negro;
+    width: 50%;
+    margin: 0 auto;
+}
+.centrado-left{
+    top: 50%;
+    left: 1%;
+}
+.section-restaurante{
+    background-color: $ceniza;
+}
+

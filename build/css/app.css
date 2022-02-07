@@ -178,6 +178,7 @@ h3 {
   justify-content: center;
   gap: 2rem;
   margin: 0;
+  object-fit: cover;
 }
 @media (min-width: 768px) {
   .conteiner-card {
@@ -421,16 +422,37 @@ h3 {
   background-color: #252440;
 }
 
-.casino-main {
-  background-color: black;
+.contenedor-restaurante {
   position: relative;
+  width: 85%;
+  display: block;
+  background-color: #CDCDCD;
+  margin: 0 auto;
+}
+.contenedor-restaurante img {
+  object-fit: cover;
+  margin: 1rem 0;
+  width: 85%;
 }
 
-.casino-texto {
-  color: red;
+.centrado {
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  background-color: #ffffff93;
+  text-align: center;
+  color: #000000;
+  width: 50%;
+  margin: 0 auto;
 }
-.casino-texto p {
-  color: green;
+
+.centrado-left {
+  top: 50%;
+  left: 1%;
+}
+
+.section-restaurante {
+  background-color: #CDCDCD;
 }
 
 /*# sourceMappingURL=app.css.map */
