@@ -15,14 +15,54 @@
 }
 
 .centrado{
-    position: absolute;
-    top: 50%;
-    left: 33%;
-    background-color: $blanco-bg;
-    text-align: center;
-    color: $negro;
-    width: 50%;
-    margin: 0 auto;
+   background-color: $blanco-bg;
+   position: absolute;
+   top: 50%;
+   left: 8%;
+   background-color: $blanco-bg;
+   text-align: center;
+   color: $negro;
+   width: 75%;
+   margin: 0 auto;
+   padding-bottom: 2rem;
+    h3{
+        font-size: 1.1rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    @include telefono{
+        h3{
+        }
+    p{
+    }
+    }
+    @include tablet{
+        background-color: $blanco-bg;
+        position: absolute;
+        top: 50%;
+        left: 23%;
+        background-color: $blanco-bg;
+        text-align: center;
+        color: $negro;
+        width: 60%;
+        margin: 0 auto;
+        h3{
+            font-size: 1.5rem;
+        }
+    p{
+        font-size: 1.3rem;
+    }
+
+    }
+    @include desktop{
+        h3{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
 }
 .centrado-left{
     top: 50%;
@@ -30,5 +70,9 @@
 }
 .section-restaurante{
     background-color: $ceniza;
+ 
+}
+.margin{
+    margin: 0 auto;
 }
 
