@@ -80,6 +80,9 @@ object-fit: cover;
     border: none;
     display: inline;
     text-align: center;
+    &:hover{
+        background-color: $negro;
+    }
     @include telefono{
         font-size: 2rem;
     }

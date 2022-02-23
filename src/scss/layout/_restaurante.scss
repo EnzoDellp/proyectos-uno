@@ -1,78 +1,23 @@
-.contenedor-restaurante{
-    position: relative;
-    width: 85%;
-    display: block;
-    background-color: $ceniza;
-    margin: 0 auto;
-
-
-    img{
-        object-fit: cover;
-        margin: 1rem 0;
-        width: 85%;
-        
-    }
-}
-
-.centrado{
-   background-color: $blanco-bg;
-   position: absolute;
-   top: 50%;
-   left: 8%;
-   background-color: $blanco-bg;
-   text-align: center;
-   color: $negro;
-   width: 75%;
-   margin: 0 auto;
-   padding-bottom: 2rem;
-    h3{
-        font-size: 1.1rem;
-    }
-    p{
-        font-size: 1rem;
-    }
-    @include telefono{
-        h3{
-        }
-    p{
-    }
-    }
-    @include tablet{
-        background-color: $blanco-bg;
-        position: absolute;
-        top: 50%;
-        left: 23%;
-        background-color: $blanco-bg;
-        text-align: center;
+.carrusel-h5{
+    font-size: 2rem;
+    font-family:$fuente_principal;
+    color: $negro;
+    .carousel-p-spa{
+        font-size: 1.5rem;
+        font-family: $fuente_principal;
         color: $negro;
-        width: 60%;
-        margin: 0 auto;
-        h3{
-            font-size: 1.5rem;
-        }
-    p{
-        font-size: 1.3rem;
-    }
 
     }
-    @include desktop{
-        h3{
-            font-size: 2rem;
-        }
-        p{
-            font-size: 1.5rem;
-        }
-    }
+   
 }
-.centrado-left{
-    top: 50%;
-    left: 1%;
-}
-.section-restaurante{
-    background-color: $ceniza;
- 
-}
-.margin{
-    margin: 0 auto;
-}
+.carrusel-blanco{
+    font-size: 2rem;
+    font-family: $fuente_principal;
+    
 
+}
+.carousel-pb{
+    font-size: 1.5rem;
+    font-family: $fuente_principal;
+    color: $blanco;
+}

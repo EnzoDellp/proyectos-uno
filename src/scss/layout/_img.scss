@@ -27,11 +27,13 @@ img{
 .contenido-img{
     z-index: 10;
     h2{
-        color:$negro;
         font-size: 2rem;
         margin:0;
+        color: $negro;
         @include telefono{
              font-size: 7rem;
+             color:$blanco;
+
         }
     }
     p{
@@ -42,6 +44,7 @@ img{
         margin: 0;
         @include telefono{
             font-size: 2.4rem;
+            
 
         }
     }

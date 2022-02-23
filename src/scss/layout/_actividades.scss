@@ -51,6 +51,13 @@
     gap: 2rem;
     border: $ceniza solid 0.2rem;
     font-size: 1rem;
+    
+    &:last-of-type{
+        padding: 1rem;
+    }
+    
+    
+   
     .Contenedor-img{
         width: 50%;
     }

@@ -39,16 +39,69 @@
     <header class="header">
 
         <div class="contenido-header">
-            <h1>Hotel Atlas</h1>
+            <h1><a href="index.html">Hotel Atlas</a></h1>
             <nav class="navegacion-principal"> 
                 <a href="reservas.html">Reservar</a>
                 <a href="#">Actividades</a>
-                <a href="#">Contacto</a>
+                <a href="contacto.html">Contacto</a>
             </nav>
         </div>
         
     </header>
-    
+    <main class="contenedor contenedor-reservas">
+        <h3 class="centrar-texto">Reservas</h3>
+
+
+        <div class="reserva-bg">
+          <img src="media/img/hotel-frente.webp" alt="Hotel espacioso Frente al mar con playa">
+        </div>
+      <form class="formulario">
+
+        <div class="reservas-global">
+          
+        <div class="campo">
+          <label class="campo__label">Su Nombre</label>
+          <input type="text" placeholder="Su Nombre">
+        </div>
+        <div class="campo">
+          <label class="campo__label">Su Apellido</label>
+          <input type="text" placeholder="Su Apellido">
+        </div>
+        <div class="campo">
+          <label class="campo__label">Su Correo Electronico</label>
+          <input type="email" placeholder="Correo Electronico">
+        </div>
+        <div class="campo">
+          <label class="campo__label">Check In</label>
+          <input type="date" aria-placeholder="Check In">
+        </div>
+        <div class="campo">
+          <label class="campo__label">Check Out</label>
+          <input type="date" aria-placeholder="Check Out">
+        </div>
+        <div class="campo">
+          <label class="campo__label">Cantiad De Huespedes: </label>
+          <input type="number">
+        </div>
+        <div class="campo">
+          <label class="campo__label">Cantidad De Menores: </label>
+          <input type="number">
+        
+        </div>
+        <div class="campo">
+          <label class="campo__label">Viaja Con Mascotas?</label>
+          <label>Si</label>
+          <input  type="checkbox">
+          <Label>No</Label>
+          <input  type="checkbox" >
+        </div>
+        <div>
+          <input class="boton-campo" type="submit" value="Reservar">
+        </div>
+      </div>
+      </form>
+        
+    </main>
     
     
     
@@ -56,8 +109,7 @@
         <div class="contenido-footer">
             <p class="titulo-footer">Hotel Atlas</p>
             <nav class="nav-footer"> 
-                <a class="a-fotter" href="reservas.html">Reservar</a>
-                <a class="a-fotter" href="#">Actividades</a>
+                <a class="a-fotter" href="reservas.html">Volver Al Hotel</a>
                 <a class="a-fotter" href="#">Contacto</a>
                 <a class="a-fotter" href="#">Nosotros</a>
             </nav>

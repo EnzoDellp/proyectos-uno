@@ -1,6 +1,6 @@
 .header{
     background-color: $azul;
-    a{
+    h1{
         color: $ceniza;
         text-align:center;
         @include tablet{
@@ -33,41 +33,48 @@
         @include tablet{
             margin: 0;
         }
-      
-        &:hover{
-            color: $blanco;
+       
+    }
+}
+body{
+    background-color: $ceniza;
+
+}
+
+.nosotros-conteiner{
+    background-color: $ceniza;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1rem;
+    flex-direction: row-reverse;
+    width: 100%;
+    .nosotros__text{
+        text-align: center;
+        color: $negro;
+        font-family: $fuente_principal;
+        p{
+            color: $negro;
+            font-family: $fuente_parrafos;
         }
     }
 }
-.contenedor-reservas{
+.contacto-titulo{
+    padding-top: 2rem;
+    height: 20rem;
     text-align: center;
+    font-size: $fuente_principal;
 }
-/* Inicio Formulario reservas */
-.reservas-global{
-    border: 1rem solid $blanco;
- 
-}
-.campo{
-    padding: 1rem 0 1rem 0;
-    display: flex;
-}
-.campo__label{
-    text-align: right;
-    padding-right: 1.5rem;
-}
-.boton-campo{
-    font-family: $fuente_principal;
-    margin-top: 1.5rem;
-    font-size: 3rem;
-    display: flex;
-    background-color: $azul;
-    color: $ceniza;
-    border: none;
-    text-align: center;
-    &:hover{
-        color: $blanco;
+    .formulario-contacto{
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
-}
+    
 
 
 
@@ -79,7 +86,12 @@
 
 
 
-/* Fin Formulario reservas */
+
+
+
+
+
+
 
 
 .footer{
@@ -112,6 +124,7 @@
         color: $blanco;
     }
 }
+
 .derechos{
     color: $ceniza;
     text-align: center;
