@@ -36,6 +36,7 @@
        
     }
 }
+
 body{
     background-color: $ceniza;
 
@@ -51,32 +52,112 @@ body{
     font-size: 1rem;
     flex-direction: row-reverse;
     width: 100%;
+
+    
     .nosotros__text{
         text-align: center;
         color: $negro;
         font-family: $fuente_principal;
+        font-size: 2rem;
+        padding-top: 1rem;
+        border-bottom: 1px solid $blanco;
+
+        
+        
+      
+        @include telefono{
+            font-size: 1.5rem;
+        }
+        @include tablet{
+            font-size: 2rem;
+        }
         p{
             color: $negro;
             font-family: $fuente_parrafos;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+
+            @include telefono{
+                font-size: 1rem;
+            }
+            @include tablet{
+                font-size: 2rem;
+            }
+        }
+    }
+    .nosotros-img{
+        display: none;
+        min-width:40% ;
+        max-width: 80%;
+
+        @include telefono{
+            display: block;
+        }
+        @include tablet{
         }
     }
 }
 .contacto-titulo{
     padding-top: 2rem;
-    height: 20rem;
     text-align: center;
     font-size: $fuente_principal;
 }
     .formulario-contacto{
-        margin-bottom: 2rem;
-        font-size: 2rem;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+        margin-bottom: 4rem;
+        font-size: 2.3rem;
+        width: 95%;
+        padding: 5rem;
+        margin: 0 auto;
+        
+     
+        .contacto-uno{
+            display: flex;
+            margin-bottom: 2rem;
+            text-align: right;
+            gap: 2rem;
+        }
+        
     }
-    
+    .contacto__label{
+        flex: 0 0 9;
+        font-size: 1.5rem;
 
+        @include tablet{
+            font-size: 1.8rem;
+        }
+    }
 
+    .contacto__field{
+        flex: 1;
+        border: 1px solid $gris;
+        font-size: 1.2rem;
+
+        @include tablet{
+            font-size: 1.5rem;
+        }
+    }
+    .contacto__field--textarea{
+        height: 10rem;
+
+        @include tablet{
+            height: 20rem;
+
+        }
+    }
+
+.boton-contac{
+  font-family: $fuente_principal;
+   font-size: 3rem;
+   color: $ceniza;
+   background-color: $azul;
+   border: none;
+   text-align: center;
+   padding: 1px;
+   &hover{
+       color: $blanco;
+       cursor: pointer;
+   }
+}
 
 
 

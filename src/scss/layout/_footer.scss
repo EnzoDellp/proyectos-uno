@@ -37,3 +37,26 @@
     color: $ceniza;
     text-align: center;
 }
+.nav-social{
+    min-width: 30%;
+    max-width: 38%;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    @include tablet{
+        min-width: 30%;
+        max-width: 35%;
+        padding-left: 3rem;
+    }
+    @include desktop{
+        min-width: 35%;
+        max-width: 35.5%;
+    }
+    @include desktopXL{
+        min-width: 30%;
+        max-width: 34%;
+        gap: 1rem;
+    }
+   
+}
